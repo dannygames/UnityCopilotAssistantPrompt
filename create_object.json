@@ -1,0 +1,82 @@
+{
+  "name": "create_object",
+  "description": "Creates a specified object type at given coordinates in the Unity scene",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "objectType": {
+        "type": "string",
+        "description": "The type of object to create, e.g. Cube, Sphere, Cylinder"
+      },
+      "position": {
+        "type": "object",
+        "description": "The x, y, and z coordinates to place the object",
+        "properties": {
+          "x": {
+            "type": "number",
+            "description": "The x coordinate"
+          },
+          "y": {
+            "type": "number",
+            "description": "The y coordinate"
+          },
+          "z": {
+            "type": "number",
+            "description": "The z coordinate"
+          }
+        },
+        "required": [
+          "x",
+          "y",
+          "z"
+        ]
+      },
+      "rotation": {
+        "type": "object",
+        "description": "The rotation of the object on the x, y, and z axes in degrees (optional)",
+        "properties": {
+          "x": {
+            "type": "number",
+            "default": 0,
+            "description": "The rotation around the x axis"
+          },
+          "y": {
+            "type": "number",
+            "default": 0,
+            "description": "The rotation around the y axis"
+          },
+          "z": {
+            "type": "number",
+            "default": 0,
+            "description": "The rotation around the z axis"
+          }
+        }
+      },
+      "scale": {
+        "type": "object",
+        "description": "The scale of the object in the x, y, and z dimensions (optional)",
+        "properties": {
+          "x": {
+            "type": "number",
+            "default": 1,
+            "description": "The scale in the x dimension"
+          },
+          "y": {
+            "type": "number",
+            "default": 1,
+            "description": "The scale in the y dimension"
+          },
+          "z": {
+            "type": "number",
+            "default": 1,
+            "description": "The scale in the z dimension"
+          }
+        }
+      }
+    },
+    "required": [
+      "objectType",
+      "position"
+    ]
+  }
+}

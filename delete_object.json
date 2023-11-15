@@ -1,0 +1,16 @@
+{
+  "name": "delete_object",
+  "description": "Deletes a specified object by its name from the Unity scene",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "gameObjectName": {
+        "type": "string",
+        "description": "The name of the object to delete"
+      }
+    },
+    "required": [
+      "gameObjectName"
+    ]
+  }
+}

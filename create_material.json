@@ -1,0 +1,47 @@
+{
+  "name": "create_material",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "gameObjectName": {
+        "type": "string",
+        "description": "The name of the object"
+      },
+      "color": {
+        "type": "object",
+        "description": "The name of the component to attach to the object",
+        "properties": {
+          "r": {
+            "type": "number",
+            "description": "The red channel"
+          },
+          "g": {
+            "type": "number",
+            "description": "The green channel"
+          },
+          "b": {
+            "type": "number",
+            "description": "The blue channel"
+          }
+        },
+        "required": [
+          "r",
+          "g",
+          "b"
+        ]
+      },
+      "metallic": {
+        "type": "string",
+        "description": "The metallic shine of the material"
+      },
+      "glossiness": {
+        "type": "string",
+        "description": "The glossiness of the material"
+      }
+    },
+    "required": [
+      "gameObjectName"
+    ]
+  },
+  "description": "creates a material and adds it to a object"
+}

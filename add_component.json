@@ -1,0 +1,21 @@
+{
+  "name": "add_component",
+  "description": "Adds a component to a object",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "gameObjectName": {
+        "type": "string",
+        "description": "The name of the object"
+      },
+      "componentName": {
+        "type": "string",
+        "description": "The name of the component to attach to the object. Use the full name space. for example RigidBody should be UnityEngine.Rigidbody"
+      }
+    },
+    "required": [
+      "gameObjectName",
+      "componentName"
+    ]
+  }
+}

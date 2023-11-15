@@ -1,0 +1,81 @@
+{
+  "name": "transform_object",
+  "description": "transform a specified object by its name to given coordinates in the Unity scene",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "gameObjectName": {
+        "type": "string",
+        "description": "The name of the object to move"
+      },
+      "position": {
+        "type": "object",
+        "description": "The new  x, y, and z coordinates to place the object",
+        "properties": {
+          "x": {
+            "type": "number",
+            "description": "The new x coordinate"
+          },
+          "y": {
+            "type": "number",
+            "description": "The new y coordinate"
+          },
+          "z": {
+            "type": "number",
+            "description": "The new z coordinate"
+          }
+        },
+        "required": [
+          "x",
+          "y",
+          "z"
+        ]
+      },
+      "rotation": {
+        "type": "object",
+        "description": "The rotation of the object on the x, y, and z axes in degrees (optional)",
+        "properties": {
+          "x": {
+            "type": "number",
+            "default": 0,
+            "description": "The rotation around the x axis"
+          },
+          "y": {
+            "type": "number",
+            "default": 0,
+            "description": "The rotation around the y axis"
+          },
+          "z": {
+            "type": "number",
+            "default": 0,
+            "description": "The rotation around the z axis"
+          }
+        }
+      },
+      "scale": {
+        "type": "object",
+        "description": "The scale of the object in the x, y, and z dimensions (optional)",
+        "properties": {
+          "x": {
+            "type": "number",
+            "default": 1,
+            "description": "The scale in the x dimension"
+          },
+          "y": {
+            "type": "number",
+            "default": 1,
+            "description": "The scale in the y dimension"
+          },
+          "z": {
+            "type": "number",
+            "default": 1,
+            "description": "The scale in the z dimension"
+          }
+        }
+      }
+    },
+    "required": [
+      "gameObjectName"
+    ]
+  }
+}
