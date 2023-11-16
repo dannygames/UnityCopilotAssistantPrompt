@@ -31,6 +31,10 @@
           "z"
         ]
       },
+      "gameObjectName": {
+        "type": "string",
+        "description": "The name for the new object"
+      },
       "rotation": {
         "type": "object",
         "description": "The rotation of the object on the x, y, and z axes in degrees (optional)",
@@ -76,6 +80,7 @@
     },
     "required": [
       "objectType",
+      "gameObjectName",
       "position"
     ]
   }
